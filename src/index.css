@@ -1,0 +1,8 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+body{@apply bg-slate-100 text-ink antialiased}
+.card{@apply rounded-2xl bg-white/80 backdrop-blur border border-white shadow-[0_1px_2px_rgba(14,27,44,.06),0_8px_24px_-12px_rgba(14,27,44,.12)]}
+button:not(:disabled){transition:transform .2s,background-color .2s,box-shadow .2s}
+button:not(:disabled):active{transform:scale(.97)}
+.card{transition:box-shadow .3s}
+.card:hover{box-shadow:0 12px 32px -14px rgba(14,27,44,.28)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
